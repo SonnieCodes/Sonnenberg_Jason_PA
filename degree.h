@@ -7,6 +7,6 @@
 
 using namespace std;
 
- enum class DegreeProgram {SECURITY, NETWORK, SOFTWARE, UNDECIDED};
+enum class DegreeProgram { SECURITY, NETWORK, SOFTWARE, UNDECIDED};
 
-static const string degreeProgramStrings[] = { "Security", "Network", "Software","Undecided"};
+ static const string degreeProgramStrings[] = { "Security", "Network", "Software", "Undecided"};

@@ -1,14 +1,9 @@
 #include "roster.h"
 
-void Roster::add(
-	string studentID,
-	string firstName,
-	string lastName,
-	string emailAddress,
-	int age,
-	int daysInCourse1,
-	int daysInCourse2,
-	int daysInCourse3,
+void Roster::add(string studentID, string firstName,
+	string lastName, string emailAddress, 
+	int age, int daysInCourse1, 
+	int daysInCourse2, int daysInCourse3, 
 	DegreeProgram degreeProgram)
 {
 	vector<int> totalAllDays{ daysInCourse1, daysInCourse2, daysInCourse3 };

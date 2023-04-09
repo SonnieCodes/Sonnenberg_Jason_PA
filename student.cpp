@@ -2,12 +2,9 @@
 
 
 Student::Student(
-	string studentID,
-	string firstName,
-	string lastName,
-	string emailAddress,
-	int age,
-	vector<int> daysInCourse,
+	string studentID, string firstName,
+	string lastName, string emailAddress,
+	int age, vector<int> daysInCourse,
 	DegreeProgram degreeProgram)
 {
 	this->studentID = studentID;
@@ -57,14 +54,14 @@ void Student::Print(printByColumn printItem) {
 		cout << " Age: " << age << endl;
 		break;
 	case printByColumn::CLASSDAYS:
-		cout << " Days to Complete Course: " << "( ";
+		cout << " Days to Complete Course: " << "{ ";
 		for (int i = 0; i < daysInCourse.size(); i++) {
 			cout << daysInCourse.at(i);
 			if (daysInCourse.size() > i + 1) {
 				cout << ", ";
 			}
 		}
-		cout << " )";
+		cout << " }";
 		break;
 	case printByColumn::STUDENTPROGRAM:
 		cout << " Degree Program: " << degreeProgramStrings[(int)degreeProgram] << endl;

@@ -77,7 +77,7 @@ Roster inputStudentData(const string studentData[], int numStudents) {
 		DegreeProgram degreeProgramInput = DegreeProgram::UNDECIDED;
 		string studentProgramInput = studentData[i].substr(lhs, studentData[i].length() - lhs);
 
-		//Error code number irrelevent.  Variable is needed for catch clause
+		//Error code for the throw, value is errelivent in this situation
 		int errorCode = 000;
 
 		try {
@@ -92,7 +92,7 @@ Roster inputStudentData(const string studentData[], int numStudents) {
 			}
 			else throw errorCode;
 		}
-			catch (int erroCode) {
+			catch (int erorCode) {
 				cout << "Unknown Degree Program" << endl;
 			}
 			Roster.add(studentIDInput, studentFNameInput, studentLNameInput, studentEmailInput, studentAgeInput, 
